@@ -89,6 +89,7 @@ const todo = {
           const done = this.value === "true";
           todo.items[itemIndex].done = done;
           todo.render();
+          todo.save();
         });
       }
     }
